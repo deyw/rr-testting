@@ -9,7 +9,7 @@ import {
 } from 'recompose';
 
 const HOC = compose(
-  setDisplayName('AComponent'),
+  setDisplayName('RecomposeComponent'),
   withStateHandlers(
     (props) => ({
       _name: props.name,
@@ -46,7 +46,7 @@ const RecomposeComponent = ({ _name, newName, _setNewName }) => (
     }}
   >
     <small style={{ position: 'absolute', top: '0px', color: 'grey' }}>
-      AComponent
+      Recompose
     </small>
     CurrentName: {_name}
     <br />
